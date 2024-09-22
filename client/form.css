@@ -1,0 +1,58 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+#form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ff6eb9;
+  width: 300px;
+}
+
+.form-section {
+  position: relative;
+  width: 95%;
+  margin: 5px;
+  align-items: center;
+  font-size: small;
+}
+.title {
+  color: white;
+}
+
+#submit-button {
+  background-color: #68a67d;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Playfair Display", serif;
+  /* left: 50%;
+  transform: translateX(50%); */
+}
+
+#message {
+  height: 135px;
+}
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-family: "Playfair Display", serif;
+}
+
+#submit-button:hover {
+  background-color: #8fbf9f;
+}
+@media ((width<=370px)) {
+  #form-container {
+    width: 250px;
+  }
+}

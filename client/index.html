@@ -2,13 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Font Awesome Icons style sheet  -->
+    <script
+      src="https://kit.fontawesome.com/5d4d1c054f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./public/guestbook.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./form.css" />
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="./client.js"></script>
-    <title>Geustbook</title>
+    <title>The Guestbook</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="main-container">
+      <div id="header">
+        <h1>The Guestbook</h1>
+      </div>
+      <div id="secondary-container">
+        <form id="the-form">
+          <div id="form-container">
+            <div class="form-section">
+              <div class="title">
+                <label for="username">Username:</label>
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Your Username..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="title">
+                <label for="trip-date">Start Date of Visit:</label>
+              </div>
+              <div class="input">
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  min="2024-01-01"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="title">
+                <label for="message">Message to Other Guests:</label>
+              </div>
+              <div class="input">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your stay..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-section" id="submit">
+              <button id="submit-button" type="submit">SUBMIT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="feedback-container">
+      <div id="scroll-button">
+        <button id="myBtn" title="Scroll to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
