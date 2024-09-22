@@ -47,9 +47,8 @@ async function createFedback() {
   const feedbackContainer = document.getElementById("feedback-container");
   const feedbackData = await getFeedback();
 
-  // feedbackContainer.innerHTML = "";
-
-  feedbackData.forEach((feedback) => {
+  //Displays last peice of data input first
+  feedbackData.reverse().forEach((feedback) => {
     const userContainer = document.createElement("div");
     const newDiv = document.createElement("div");
     const thumbContainer = document.createElement("div");
