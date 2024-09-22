@@ -17,7 +17,7 @@ function handleSubmit(event) {
   const formValues = Object.fromEntries(formData);
   console.log(formValues);
 
-  fetch("http://localhost:8080/add-data", {
+  fetch("https://week-4-guestbook-assignment.onrender.com/add-data", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -30,7 +30,9 @@ function handleSubmit(event) {
 
 //Get the feedback data from the read-data endpoint
 async function getFeedback() {
-  const response = await fetch("http://localhost:8080/read-data");
+  const response = await fetch(
+    "https://week-4-guestbook-assignment.onrender.com/read-data"
+  );
   // console.log(response);
   const feedback = await response.json();
   // console.log(upgrades);
