@@ -24,7 +24,7 @@
 
 ## Reflection
 
-- To be honest this has been my least favourite roject so far, I don't know if it was the number of elements that we had to do or whether i just didn't enjoy the backend side of things as much or maybe I wasn't as invested as the cookie clicker😅. It was definately still nice to learn and practice something new.
+- To be honest this has been my least favourite project so far, I don't know if it was the number of elements that we had to do or whether i just didn't enjoy the backend side of things as much or maybe I wasn't as invested as the cookie clicker😅. It was definately still nice to learn and practice something new.
 - Once i had broken down the task into parts, it became a lot easier to start putting it all together:
   - I set up my client, sevrer and my database (using seed file) first then i did the connections one by one.
   - Server --> Database then Client --> Server to make the one way connection
