@@ -24,6 +24,7 @@ function handleSubmit(event) {
     },
     body: JSON.stringify({ formValues }),
   });
+
   createFedback();
   guestbookForm.reset();
 }
